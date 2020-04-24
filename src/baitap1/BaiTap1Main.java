@@ -14,10 +14,12 @@ public class BaiTap1Main
     public static void main(String[] args) {
         
        context tinhToan = new context();
-       tinhToan.setTinhToan(new Tru());
-       System.out.println("75 + 12 = " +tinhToan.tinh(75,12));     
-    
-       tinhToan.setTinhToan(new Tru());
+       Tinh cong = new Cong();
+       Tinh tru = new Tru();
+  
+       tinhToan.setTinhToan(cong);
+       System.out.println("75 + 12 = " +tinhToan.tinh(75, 12));     
+       tinhToan.setTinhToan(tru);
        System.out.println("54 - 78 = " +tinhToan.tinh(54, 78));
        
     }

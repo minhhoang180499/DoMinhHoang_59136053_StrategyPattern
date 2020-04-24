@@ -17,17 +17,16 @@ public class GioHang
     IThanhToan hinhThucTT;
     ArrayList<HangHoa> dsHH = new ArrayList<>();
     
-    public int themHangHoa(HangHoa hang)
+    public void themHangHoa(HangHoa hang)
     {
         dsHH.add(hang);
-        return 1;
     }
     
     public int tienHang()
     { 
         int tienHang=0;
-        for(int i=0;i<dsHH.size();i++)
-            tienHang+=dsHH.get(i).getGia();
+        for(int i=0; i<dsHH.size(); i++)
+            tienHang = tienHang + dsHH.get(i).getGia();
         return tienHang;   
     }
     
@@ -38,12 +37,12 @@ public class GioHang
     
     public double thanhToan()
     {
-        return hinhThucTT.thanhToan( tienHang());
+        return hinhThucTT.thanhToan(tienHang());
     }
     
     public void inDS()
     {
-        for(int i=0;i<dsHH.size();i++)
+        for(int i=0; i<dsHH.size(); i++)
         {
             System.out.println("Tên mặc hàng: "+dsHH.get(i).getTenHH()+"\n"+
                                "Mô tả: "+dsHH.get(i).getMoTa()+"\n"+
