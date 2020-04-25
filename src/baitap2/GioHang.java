@@ -17,6 +17,8 @@ public class GioHang
     IThanhToan hinhThucTT;
     ArrayList<HangHoa> dsHH = new ArrayList<>();
     
+    
+    
     public void themHangHoa(HangHoa hang)
     {
         dsHH.add(hang);

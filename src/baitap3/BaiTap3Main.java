@@ -18,9 +18,7 @@ public class BaiTap3Main
     {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         QLSV dsSV = new QLSV();
-        ISoSanh soSanhTheoDiem = new SoSanhTheoDiem();
-        ISoSanh soSanhTheoTen = new SoSanhTheoTen();
-        
+         
         SinhVien sv1 = new SinhVien("Đỗ Minh Hoàng",sdf.parse("18-04-1999"),7);
         SinhVien sv2 = new SinhVien("Nguyễn Hoàng Long",sdf.parse("04-10-1999"),8);
         SinhVien sv3 = new SinhVien("Phạm Vương Lam Nhạc",sdf.parse("21-01-1999"),10);
@@ -31,12 +29,12 @@ public class BaiTap3Main
         dsSV.themSinhVien(sv4);
         
         System.out.println("------- Sắp Xếp Theo Tên: ");
-        dsSV.setSoSanhSV(soSanhTheoTen);
+        dsSV.setSoSanhSV(new SoSanhTheoTen());
         dsSV.sapXep();
         dsSV.inDS();
         
         System.out.println("------- Sắp Xếp Theo Điểm");
-        dsSV.setSoSanhSV(soSanhTheoDiem);
+        dsSV.setSoSanhSV(new SoSanhTheoDiem());
         dsSV.sapXep();
         dsSV.inDS();
         
