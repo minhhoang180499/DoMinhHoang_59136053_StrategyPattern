@@ -44,12 +44,12 @@ public class GioHang
     {
         for(int i=0; i<dsHH.size(); i++)
         {
-            System.out.println("Tên mặc hàng: "+dsHH.get(i).getTenHH()+"\n"+
-                               "Mô tả: "+dsHH.get(i).getMoTa()+"\n"+
-                               "Giá: "+dsHH.get(i).getGia()+"\n");
+            System.out.println("Tên Mặc Hàng: " + dsHH.get(i).getTenHH() + "\n"+
+                               "Mô Tả: " + dsHH.get(i).getMoTa() + "\n"+
+                               "Giá: " + dsHH.get(i).getGia() + "\n");
         }
-        System.out.println("Tiền Hàng: "+tienHang() +"\n"+
-                           "Số Tiền Khách Phải Trả: "+thanhToan()+"\n");
+        System.out.println("Tiền Hàng: "+tienHang() + "\n"+
+                           "Số Tiền Khách Phải Trả: " + thanhToan() + "\n");
                 
     }
 }
