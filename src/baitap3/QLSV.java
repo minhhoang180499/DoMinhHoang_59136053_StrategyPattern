@@ -37,15 +37,14 @@ public class QLSV
     }
     
        public void inDS()
-   {
+    {
        for(int i=0; i<dsSV.size(); i++)
-       { 
+        { 
            System.out.println("Họ Và Tên Sinh Viên: " + dsSV.get(i).getHoTen() + "\n"+
                               "Ngày Sinh: " + dsSV.get(i).getNgaySinh() + "\n"+
                                "Điểm: " + dsSV.get(i).getDiemTB());
-                                       
-                   
-       }
-   }
+                    
+        }
+    }
             
 }
